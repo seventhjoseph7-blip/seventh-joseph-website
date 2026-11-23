@@ -20,7 +20,7 @@ section{padding:76px 0}.section-head{text-align:center;max-width:720px;margin:0 
 .about{background:var(--bg)}.about-layout{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}.photo{min-height:360px;border-radius:22px;background:linear-gradient(0deg,rgba(8,31,65,.14),transparent),url('https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1200&q=85') center/cover;box-shadow:0 15px 35px rgba(22,56,99,.1)}.about h2{font-size:clamp(30px,3vw,42px);line-height:1.14;letter-spacing:-1.2px;color:var(--navy);margin:0 0 15px}.about p{color:var(--muted)}.checks{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:25px 0}.check{display:flex;gap:10px;font-size:14px;font-weight:700;color:#2a4262}.check span{color:var(--blue);font-size:18px}
 .process{background:#fff}.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.step{border-top:3px solid #b9d7fb;padding:22px 17px 0}.number{font-size:12px;font-weight:900;color:var(--blue);letter-spacing:1.5px}.step h3{margin:8px 0;color:var(--navy);font-size:18px}.step p{font-size:14px;color:var(--muted);margin:0}
 .insights{background:#f3f7fc}.insight-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.insight{border-radius:16px;background:#fff;border:1px solid var(--line);padding:24px}.tag{display:inline-block;padding:5px 9px;border-radius:999px;background:#eaf3ff;color:var(--blue);font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.5px}.insight h3{color:var(--navy);font-size:18px;line-height:1.35}.insight p{font-size:14px;color:var(--muted)}
-.contact{background:linear-gradient(125deg,#0b2450,#174d8b);color:white}.contact-layout{display:grid;grid-template-columns:.85fr 1.15fr;gap:50px;align-items:start}.contact h2{font-size:clamp(30px,3vw,40px);line-height:1.15;margin:0 0 15px}.contact p{color:#d6e5f8}.contact-details{margin-top:28px;display:grid;gap:12px;color:#e5efff;font-size:14px}.form{background:#fff;color:var(--ink);padding:28px;border-radius:18px;display:grid;gap:14px}.form label{display:block;font-size:13px;font-weight:800;margin-bottom:5px}.form input,.form select,.form textarea{width:100%;border:1px solid #d7e1ee;border-radius:10px;padding:12px 13px;font:inherit;font-size:14px;background:#fbfdff;color:var(--ink)}.form textarea{min-height:105px;resize:vertical}.form .btn{width:100%;border-radius:10px}.notice{display:none;background:#e9f8ef;color:#17633b;padding:12px;border-radius:10px;font-size:14px}
+.contact{background:linear-gradient(125deg,#0b2450,#174d8b);color:white}.contact-layout{display:grid;grid-template-columns:.85fr 1.15fr;gap:50px;align-items:start}.contact h2{font-size:clamp(30px,3vw,40px);line-height:1.15;margin:0 0 15px}.contact p{color:#d6e5f8}.contact-details{margin-top:28px;display:grid;gap:12px;color:#e5efff;font-size:14px}.form{background:#fff;color:var(--ink);padding:28px;border-radius:18px;display:grid;gap:14px}.form label{display:block;font-size:13px;font-weight:800;margin-bottom:5px}.form input,.form select,.form textarea{width:100%;border:1px solid #d7e1ee;border-radius:10px;padding:12px 13px;font:inherit;font-size:14px;background:#fbfdff;color:var(--ink)}.form textarea{min-height:105px;resize:vertical}.form .btn{width:100%;border-radius:10px}.send-row{display:grid;grid-template-columns:1fr 1fr;gap:10px}.form .btn.wa{background:#1f9d55}.form .btn.wa:hover{background:#178246}.contact-details a{color:#fff;text-decoration:underline}@media(max-width:500px){.send-row{grid-template-columns:1fr}}
 footer{background:#071a38;color:#cfdbeb;padding:26px 0;font-size:13px}.footer-row{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}.footer-brand{font-weight:800;color:white;font-size:16px}
 @media(max-width:900px){.navlinks{gap:14px}.nav-cta{display:none}.hero:after{width:58%;opacity:.42}.hero h1{max-width:600px}.grid{grid-template-columns:repeat(2,1fr)}.about-layout,.contact-layout{grid-template-columns:1fr;gap:30px}.photo{min-height:280px}.steps{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:650px){.nav{height:68px}.menu{display:block}.navlinks{display:none;position:absolute;top:68px;left:0;right:0;background:white;border-bottom:1px solid var(--line);padding:18px 4%;flex-direction:column;align-items:flex-start;gap:16px}.navlinks.open{display:flex}.brand{font-size:17px}.hero{min-height:430px}.hero:after{width:100%;opacity:.16;clip-path:none}.hero .container{padding-top:45px;padding-bottom:48px}.hero h1{font-size:39px}.hero p{font-size:15px}.hero .btn{width:100%}section{padding:55px 0}.grid,.insight-grid{grid-template-columns:1fr}.steps{grid-template-columns:1fr}.checks{grid-template-columns:1fr}.form{padding:20px}.section-head{text-align:left}.footer-row{align-items:flex-start;flex-direction:column}}
@@ -77,15 +77,14 @@ footer{background:#071a38;color:#cfdbeb;padding:26px 0;font-size:13px}.footer-ro
 </section>
 <section class="contact" id="contact">
   <div class="container contact-layout">
-    <div><p class="eyebrow" style="color:#9ccaff">Contact us</p><h2>Let's Talk About Your Business Goals</h2><p>Tell us what you need help with. We'll use your message to understand the scope and discuss possible next steps.</p><div class="contact-details"><div>✉ &nbsp; Email: hello@seventhjoseph.com <small>(placeholder — replace with your real email)</small></div><div>⌖ &nbsp; Indonesia · Available for remote collaboration</div><div>◷ &nbsp; Consultation by appointment</div></div></div>
+    <div><p class="eyebrow" style="color:#9ccaff">Contact us</p><h2>Let's Talk About Your Business Goals</h2><p>Tell us what you need help with. We'll use your message to understand the scope and discuss possible next steps.</p><div class="contact-details"><div>✉ &nbsp; Email: <a href="mailto:seventhjoseph@gmail.com">seventhjoseph@gmail.com</a></div><div>✆ &nbsp; WhatsApp: <a href="https://wa.me/6282120849850" target="_blank" rel="noopener">+62 821-2084-9850</a></div><div>⌖ &nbsp; Indonesia · Available for remote collaboration</div><div>◷ &nbsp; Consultation by appointment</div></div></div>
     <form class="form" id="contactForm">
       <div><label for="name">Full name</label><input id="name" name="name" placeholder="Your name" required></div>
       <div><label for="email">Email address</label><input id="email" name="email" type="email" placeholder="you@company.com" required></div>
       <div><label for="service">Service of interest</label><select id="service" name="service" required><option value="">Choose a service</option><option>Accounting & Bookkeeping</option><option>Tax Administration</option><option>Financial Analysis</option><option>Process Automation</option><option>Data Management</option><option>Business Consulting</option><option>Other</option></select></div>
       <div><label for="message">How can we help?</label><textarea id="message" name="message" placeholder="Briefly describe your needs..." required></textarea></div>
-      <div class="notice" id="notice">Your message is ready. This demo form does not send data yet; connect an email or form service before publishing.</div>
-      <button class="btn" type="submit">Prepare Inquiry →</button>
-      <small style="color:#728198">Demo form: no information is sent or stored.</small>
+      <div class="send-row"><button class="btn wa" type="submit" value="wa">Send via WhatsApp</button><button class="btn" type="submit" value="email">Send via Email</button></div>
+      <small style="color:#728198">Your message opens in WhatsApp or your email app, ready to send.</small>
     </form>
   </div>
 </section>
@@ -96,7 +95,16 @@ const menuBtn=document.getElementById('menuBtn'),nav=document.getElementById('na
 menuBtn.addEventListener('click',()=>{const open=nav.classList.toggle('open');menuBtn.setAttribute('aria-expanded',String(open));menuBtn.textContent=open?'×':'☰'});
 nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');menuBtn.setAttribute('aria-expanded','false');menuBtn.textContent='☰'}));
 document.getElementById('year').textContent=new Date().getFullYear();
-document.getElementById('contactForm').addEventListener('submit',e=>{e.preventDefault();document.getElementById('notice').style.display='block';});
+document.getElementById('contactForm').addEventListener('submit',e=>{
+  e.preventDefault();
+  const f=e.target,via=(e.submitter&&e.submitter.value)||'wa';
+  const text='Hello Seventh Joseph,\n\nName: '+f.name.value+'\nEmail: '+f.email.value+'\nService: '+f.service.value+'\n\n'+f.message.value;
+  if(via==='email'){
+    location.href='mailto:seventhjoseph@gmail.com?subject='+encodeURIComponent('Consultation inquiry: '+f.service.value)+'&body='+encodeURIComponent(text);
+  }else{
+    window.open('https://wa.me/6282120849850?text='+encodeURIComponent(text),'_blank','noopener');
+  }
+});
 </script>
 </body>
 </html>
