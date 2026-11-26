@@ -103,6 +103,9 @@
   .calc .field{margin-bottom:14px}
   .calc input,.calc select{width:100%;min-block-size:48px;border:1px solid #3c6aa5;border-radius:10px;padding:10px 12px;font:inherit;font-size:max(1rem,1em);background:#fff;color:var(--ink)}
   .calc output{display:block}
+  .money{position:relative}
+  .money span{position:absolute;inset-block:0;inset-inline-start:12px;display:flex;align-items:center;color:#5f7088;font-weight:700;pointer-events:none}
+  .calc .money input{padding-inline-start:52px}
   .calc-results{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:6px}
   .calc-results div{background:rgba(255,255,255,.1);border-radius:12px;padding:12px}
   .calc-results small{display:block;color:#c3d8f3;font-size:.75rem}

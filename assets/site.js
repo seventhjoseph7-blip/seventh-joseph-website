@@ -14,10 +14,27 @@ document.getElementById('year').textContent = new Date().getFullYear();
 // Savings calculator.
 const calc = document.getElementById('calc');
 if (calc) {
-  const fmt = new Intl.NumberFormat(document.documentElement.lang === 'id' ? 'id-ID' : 'en-US', { style: 'currency', currency: 'IDR', maximumFractionDigits: 0 });
+  const locale = document.documentElement.lang === 'id' ? 'id-ID' : 'en-US';
+  const fmt = new Intl.NumberFormat(locale, { style: 'currency', currency: 'IDR', maximumFractionDigits: 0 });
+  const group = new Intl.NumberFormat(locale);
+  const digits = s => s.replace(/\D/g, '');
+
+  // Salary field: keep thousand separators (5.000.000) while typing,
+  // and keep the caret after the same digit it was after.
+  const salaryInput = calc.salary;
+  salaryInput.addEventListener('input', () => {
+    const caret = salaryInput.selectionStart ?? salaryInput.value.length;
+    const digitsBefore = digits(salaryInput.value.slice(0, caret)).length;
+    const raw = digits(salaryInput.value).replace(/^0+(?=\d)/, '').slice(0, 12);
+    salaryInput.value = raw ? group.format(Number(raw)) : '';
+    let pos = 0, seen = 0;
+    while (pos < salaryInput.value.length && seen < digitsBefore) { if (/\d/.test(salaryInput.value[pos])) seen++; pos++; }
+    salaryInput.setSelectionRange(pos, pos);
+  });
+
   const update = () => {
-    const salary = Math.max(0, Number(calc.salary.value) || 0);
-    const staff = Math.max(0, Number(calc.staff.value) || 0);
+    const salary = Number(digits(salaryInput.value)) || 0;
+    const staff = Math.min(500, Math.max(0, Math.floor(Number(calc.staff.value) || 0)));
     const share = Number(calc.share.value) / 100;
     const monthly = salary * staff * share;          // value of the work taken over each month
     calc.querySelector('[name=fee]').value = fmt.format(monthly * 2);

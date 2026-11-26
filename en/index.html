@@ -150,7 +150,7 @@
     </div>
     <form class="calc" id="calc" aria-labelledby="calc-title" onsubmit="return false">
       <h3 id="calc-title">Cost simulation</h3>
-      <div class="field"><label for="salary">Monthly salary per staff member (IDR)</label><input id="salary" name="salary" type="number" inputmode="numeric" min="0" step="100000" value="5000000"></div>
+      <div class="field"><label for="salary">Monthly salary per staff member</label><div class="money"><span aria-hidden="true">IDR</span><input id="salary" name="salary" type="text" inputmode="numeric" autocomplete="off" value="5,000,000"></div></div>
       <div class="field"><label for="staff">Number of staff whose work is automated</label><input id="staff" name="staff" type="number" inputmode="numeric" min="1" max="50" value="2"></div>
       <div class="field"><label for="share">Share of the work automated</label><select id="share" name="share"><option value="25">25%</option><option value="50">50%</option><option value="75">75%</option><option value="100" selected>100%</option></select></div>
       <div class="calc-results" aria-live="polite">
