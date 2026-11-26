@@ -11,6 +11,20 @@ nav.addEventListener('click', e => {
 
 document.getElementById('year').textContent = new Date().getFullYear();
 
+// Light/dark toggle. The <head> script already picked the starting theme
+// (saved choice, else the system setting); this flips it and remembers the choice.
+const root = document.documentElement;
+const themeBtn = document.getElementById('themeToggle');
+if (themeBtn) {
+  const sync = () => themeBtn.setAttribute('aria-pressed', String(root.dataset.theme === 'dark'));
+  sync();
+  themeBtn.addEventListener('click', () => {
+    root.dataset.theme = root.dataset.theme === 'dark' ? 'light' : 'dark';
+    try { localStorage.setItem('theme', root.dataset.theme); } catch (e) { /* storage blocked: still switches for this visit */ }
+    sync();
+  });
+}
+
 // Savings calculator.
 const calc = document.getElementById('calc');
 if (calc) {

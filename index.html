@@ -10,8 +10,10 @@
 <link rel="alternate" hreflang="id" href="https://seventhjoseph7-blip.github.io/seventh-joseph-website/">
 <link rel="alternate" hreflang="en" href="https://seventhjoseph7-blip.github.io/seventh-joseph-website/en/">
 <link rel="alternate" hreflang="x-default" href="https://seventhjoseph7-blip.github.io/seventh-joseph-website/">
-<meta name="theme-color" content="#0b2450">
-<meta name="color-scheme" content="light">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0b1220">
+<meta name="color-scheme" content="light dark">
+<script>(function(){var t;try{t=localStorage.getItem("theme")}catch(e){}if(t!=="light"&&t!=="dark"){t=matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"}document.documentElement.dataset.theme=t})();</script>
 <meta property="og:type" content="website">
 <meta property="og:locale" content="id_ID">
 <meta property="og:url" content="https://seventhjoseph7-blip.github.io/seventh-joseph-website/">
@@ -20,7 +22,7 @@
 <meta property="og:image" content="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&h=630&q=80">
 <link rel="preconnect" href="https://images.unsplash.com">
 <link rel="preload" as="image" fetchpriority="high" href="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1400&q=80">
-<link rel="stylesheet" href="assets/site.css?v=20261126b">
+<link rel="stylesheet" href="assets/site.css?v=20261127a">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -52,6 +54,7 @@
     <div class="nav-right">
       <div class="lang" aria-label="Bahasa"><a href="./" hreflang="id" lang="id" aria-current="true">ID</a><a href="en/" hreflang="en" lang="en">EN</a></div>
       <a class="btn nav-cta" href="#kontak">Analisis Gratis</a>
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Ganti mode terang/gelap" title="Ganti mode terang/gelap"><span class="to-dark" aria-hidden="true">☾</span><span class="to-light" aria-hidden="true">☀</span></button>
       <button class="menu" type="button" popovertarget="navlinks" aria-label="Menu"><span class="i-open" aria-hidden="true">☰</span><span class="i-close" aria-hidden="true">×</span></button>
     </div>
   </div>
@@ -188,6 +191,6 @@
 </section>
 </main>
 <footer><div class="container footer-row"><div><div class="footer-brand">Seventh Joseph</div><div>Otomasi administrasi & keuangan dengan AI</div></div><div>© <span id="year">2026</span> Seventh Joseph</div><div><a href="#home">Kembali ke atas <span aria-hidden="true">↑</span></a></div></div></footer>
-<script src="assets/site.js?v=20261126b" defer></script>
+<script src="assets/site.js?v=20261127a" defer></script>
 </body>
 </html>
